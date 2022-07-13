@@ -1,0 +1,134 @@
+/* global style */
+* {
+  text-transform: capitalize;
+  padding: 0;
+  margin: 0;
+}
+h1,h5 {
+  font-family: 'Alfa Slab One', cursive;
+  color: #FF4F5A;
+}
+.alert {
+  display: none;
+  text-align: left;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: .9rem;
+}
+#reg_success.show {
+  display: flex;
+  animation: fadeout 4s;
+  opacity: 0;
+}
+@keyframes fadeout {
+  0% {opacity: 0;}
+  50% {opacity: 1;}
+  100% {opacity: 0;}
+}
+/* style for register page */
+.reg-form {
+  background-color: #ECECEC;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  transition: all .5s;
+}
+
+.move-right {
+  position: absolute;
+  top: 0;
+  left: 58.3%;
+  bottom: 0;
+  transition: all .5s;
+}
+.move-all {
+  width: 100%;
+}
+.move-all .w-60{
+  width: 30%;
+  transition: all .5s;
+}
+.form-control:focus {
+  box-shadow: 0 0 0 0.25rem rgba(170, 170, 170, 0.4);
+}
+.form-control {
+  border: none;
+}
+.fs-7 {
+  font-size: .9rem;
+}
+.w-60 {
+  width: 60%;
+  transition: all .5s;
+}
+.reset-password-form input[type="password"]{
+  display: none;
+}
+.reset-password-form #r_btn{
+  display: none;
+}
+.reset-password-form-step input[type="password"]{
+  display: block;
+}
+.reset-password-form-step input[type="text"]{
+  display: none;
+} 
+.reset-password-form-step #r_btn{
+  display: block;
+}
+.reset-password-form-step #r_next_btn{
+  display: none;
+}
+
+#signup, #reset_password, #signin{
+  display: flex;
+}
+#signup, #reset_password {
+  display: none;
+
+}
+.form-show {
+  display: flex!important;
+}
+.form-hide {
+  display: none!important;
+}
+#sginup_img {
+  display: none;
+}
+#sginin_img.hide,
+#sginup_img.hide {
+display: none;
+}
+#sginin_img.show,
+#sginup_img.show {
+display: flex;
+}
+
+/* style for home page */
+navbar {
+  background-color: #ECECEC;
+}
+.logo {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #FF4F5A;
+  margin-right: 2rem;
+  position: relative;
+}
+.logo::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  right: -50%;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: .8;
+}
+.page-body {
+  height: 86%;
+}

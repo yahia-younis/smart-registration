@@ -1,0 +1,106 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <div class="reg-page vh-100">
+      <div class="container-fluid h-100 overflow-hidden">
+        <div class="row h-100">
+          
+          <div class="col-md-5 reg-form d-flex justify-content-center align-content-center">
+            
+            <!-- sgin in form -->
+            <form id="signin" class=" sginin-form justify-content-center align-items-center w-100">
+              <div class="w-60 text-center ">
+                <h1>welcome back</h1>
+                <p class="text-muted mb-5">to our smart sign in System</p>
+                <input type="text" placeholder="email address" name="user_email" class="form-control my-3"/>
+                <input type="password" placeholder=" password" name="user_password" class="form-control my-3"/>
+                <div id="invalid_sginin" class="alert alert-danger" role="alert">
+                  sorry this email not exist  <br> or password incorrect 
+                </div>
+                <div class="text-end fs-7">
+                  <a href="#" class="text-danger text-decoration-none" id="show_reset_form">reset password</a>
+                </div>
+                <a class="btn btn-danger w-100 my-3" id="sginin_btn"> Sgin In</a>
+                <p class="text-muted my-3 fs-7">Don’t have an account? <a href="#" class="text-danger text-decoration-none" id="show_sginup_form"> Sign Up</a></p>
+              </div>
+            </form>
+
+            <!-- sgin up form -->
+            <form id="signup" class="sginup-form justify-content-center align-items-center w-100">
+              <div class="w-60 text-center ">
+                <h1>welcome</h1>
+                <p class="text-muted mb-5">to our smart sign up System</p>
+                <input type="text" placeholder="your name" name="user_name" class="form-control my-3"/>
+                <div id="username_alert_up" class="alert alert-danger" role="alert">
+                  please type a vaild name
+                </div>
+                <input type="text" placeholder="your email address" name="user_email_s" class="form-control my-3"/>
+                <div id="email_alert_up" class="alert alert-danger" role="alert">
+                  please type a vaild email
+                </div>
+                <input type="password" placeholder="password" name="user_password_s" class="form-control my-3"/>
+                <div id="password_alert_up" class="alert alert-danger" role="alert">
+                  password must contain at least 6 character <br> and 1 symbol <br> and numbers
+                </div>
+                <input type="password" placeholder="retype password" name="re_password_s" class="form-control my-3"/>
+                <div id="repassword_alert_up" class="alert alert-danger" role="alert">
+                  sorry but password doesn't match
+                </div>
+                <div id="emailexist_alert_up" class="alert alert-danger" role="alert">
+                  sorry this email is exist type anter one or go to sgin in
+                </div>
+                <a class="btn btn-danger w-100 my-3" id="signup_btn"> Sgin up</a>
+                <p class="text-muted my-3 fs-7">You have an account?<a href="#" class="text-danger text-decoration-none" id="show_sginin_form"> Sign in</a></p>
+              </div>
+            </form>
+
+            <!-- reset password form -->
+            <form id="reset_password" class="reset-password-form justify-content-center align-items-center w-100">
+              <div class="w-60 text-center ">
+                <h1>welcome</h1>
+                <p class="text-muted mb-5">to our smart sign up System</p>
+                <input type="text" placeholder="your email address" name="user_email_r" class="form-control my-3"/>
+                <div id="email_r" class="alert alert-danger" role="alert">
+                  this email is not found
+                </div>
+                <input type="password" placeholder="password" name="user_password_r" class="form-control my-3"/>
+                <div id="password_alert_rv" class="alert alert-danger" role="alert">
+                  password must contain at least 6 character <br> and 1 symbol <br> and numbers
+                </div>
+                <input type="password" placeholder="retype password" name="re_password_r" class="form-control my-3"/>
+                <div id="repassword_alert_r" class="alert alert-danger" role="alert">
+                  sorry but password doesn't match
+                </div>
+                <a class="btn btn-danger w-100 my-3" id="r_next_btn">next</a>
+                <a class="btn btn-danger w-100 my-3" id="r_btn">reset password</a>
+                <p class="text-muted my-4 fs-7">i remember my passowrd 😅<a href="#" class="text-danger text-decoration-none" id="show_sginin_form_a">Sign in</a></p>
+              </div>
+            </form>
+
+          </div>
+
+          <div id="imgs_box" class="col-md-7 d-flex flex-column justify-content-center align-items-center ms-auto" >
+            <img src="img/signin.jpg" alt="signin photo" class="w-100" id="sginin_img"/>
+            <img src="img/signup.jpg" alt="signin photo" class="w-75" id="sginup_img"/>
+          </div>
+
+          <div id="reg_success" class="alert alert-success position-absolute bottom-0 end-0 w-25 align-items-center" role="alert">
+            <div class="logo"></div>
+            sgin up success go to sgin in now
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
